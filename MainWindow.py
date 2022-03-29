@@ -1,5 +1,3 @@
-# Form implementation generated from reading ui file 'd:\Work\VisualStudioDocs\Rick-Astley-PyQt-ver\MainWindow.ui'
-#
 # Created by: PyQt6 UI code generator 6.2.3
 #
 # WARNING: Any manual changes made to this file will be lost when pyuic6 is
