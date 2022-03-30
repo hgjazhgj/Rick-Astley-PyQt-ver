@@ -1,3 +1,5 @@
+# Form implementation generated from reading ui file 'd:\Work\VisualStudioDocs\Rick-Astley-PyQt-ver\MainWindow.ui'
+#
 # Created by: PyQt6 UI code generator 6.2.3
 #
 # WARNING: Any manual changes made to this file will be lost when pyuic6 is
@@ -10,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(666, 667)
+        MainWindow.resize(666, 642)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayout_13 = QtWidgets.QHBoxLayout(self.centralwidget)
@@ -76,9 +78,10 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.tab_3, "")
         self.verticalLayout.addWidget(self.tabWidget)
         self.treeWidget = QtWidgets.QTreeWidget(self.centralwidget)
-        self.treeWidget.setMinimumSize(QtCore.QSize(0, 170))
-        self.treeWidget.setMaximumSize(QtCore.QSize(16777215, 170))
+        self.treeWidget.setMinimumSize(QtCore.QSize(0, 150))
+        self.treeWidget.setMaximumSize(QtCore.QSize(16777215, 150))
         self.treeWidget.setObjectName("treeWidget")
+        self.treeWidget.headerItem().setText(0, "1")
         item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
         item_1 = QtWidgets.QTreeWidgetItem(item_0)
         item_1 = QtWidgets.QTreeWidgetItem(item_0)
@@ -87,6 +90,7 @@ class Ui_MainWindow(object):
         item_2 = QtWidgets.QTreeWidgetItem(item_1)
         item_2 = QtWidgets.QTreeWidgetItem(item_1)
         item_2 = QtWidgets.QTreeWidgetItem(item_1)
+        self.treeWidget.header().setVisible(False)
         self.verticalLayout.addWidget(self.treeWidget)
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
@@ -97,7 +101,8 @@ class Ui_MainWindow(object):
         self.TXT_1.setObjectName("TXT_1")
         self.horizontalLayout_3.addWidget(self.TXT_1)
         self.spinBox_2 = QtWidgets.QSpinBox(self.centralwidget)
-        self.spinBox_2.setMaximumSize(QtCore.QSize(17, 16777215))
+        self.spinBox_2.setMinimumSize(QtCore.QSize(18, 0))
+        self.spinBox_2.setMaximumSize(QtCore.QSize(18, 16777215))
         self.spinBox_2.setMaximum(1)
         self.spinBox_2.setProperty("value", 1)
         self.spinBox_2.setObjectName("spinBox_2")
@@ -129,7 +134,7 @@ class Ui_MainWindow(object):
         self.SCR_1.setWidgetResizable(True)
         self.SCR_1.setObjectName("SCR_1")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, -324, 141, 482))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 141, 482))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
@@ -220,11 +225,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_8.addWidget(self.BTN_2)
         self.verticalLayout.addLayout(self.horizontalLayout_8)
         self.horizontalSlider = QtWidgets.QSlider(self.centralwidget)
-        self.horizontalSlider.setSingleStep(25)
-        self.horizontalSlider.setPageStep(25)
+        self.horizontalSlider.setMaximum(4)
+        self.horizontalSlider.setPageStep(1)
         self.horizontalSlider.setOrientation(QtCore.Qt.Orientation.Horizontal)
         self.horizontalSlider.setTickPosition(QtWidgets.QSlider.TickPosition.TicksBelow)
-        self.horizontalSlider.setTickInterval(25)
+        self.horizontalSlider.setTickInterval(1)
         self.horizontalSlider.setObjectName("horizontalSlider")
         self.verticalLayout.addWidget(self.horizontalSlider)
         self.LBL_1 = QtWidgets.QLabel(self.centralwidget)
@@ -427,7 +432,6 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "commitments"))
         self.pushButton.setText(_translate("MainWindow", "thinking of"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "I\'m"))
-        self.treeWidget.headerItem().setText(0, _translate("MainWindow", " "))
         __sortingEnabled = self.treeWidget.isSortingEnabled()
         self.treeWidget.setSortingEnabled(False)
         self.treeWidget.topLevelItem(0).setText(0, _translate("MainWindow", "I"))

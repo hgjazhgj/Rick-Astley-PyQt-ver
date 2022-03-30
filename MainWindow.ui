@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>666</width>
-    <height>667</height>
+    <height>642</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -138,18 +138,21 @@
         <property name="minimumSize">
          <size>
           <width>0</width>
-          <height>170</height>
+          <height>150</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
-          <height>170</height>
+          <height>150</height>
          </size>
         </property>
+        <attribute name="headerVisible">
+         <bool>false</bool>
+        </attribute>
         <column>
          <property name="text">
-          <string> </string>
+          <string notr="true">1</string>
          </property>
         </column>
         <item>
@@ -212,9 +215,15 @@
         </item>
         <item>
          <widget class="QSpinBox" name="spinBox_2">
+          <property name="minimumSize">
+           <size>
+            <width>18</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
-            <width>17</width>
+            <width>18</width>
             <height>16777215</height>
            </size>
           </property>
@@ -288,7 +297,7 @@
            <property name="geometry">
             <rect>
              <x>0</x>
-             <y>-324</y>
+             <y>0</y>
              <width>141</width>
              <height>482</height>
             </rect>
@@ -460,11 +469,11 @@
       </item>
       <item>
        <widget class="QSlider" name="horizontalSlider">
-        <property name="singleStep">
-         <number>25</number>
+        <property name="maximum">
+         <number>4</number>
         </property>
         <property name="pageStep">
-         <number>25</number>
+         <number>1</number>
         </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -473,7 +482,7 @@
          <enum>QSlider::TicksBelow</enum>
         </property>
         <property name="tickInterval">
-         <number>25</number>
+         <number>1</number>
         </property>
        </widget>
       </item>
