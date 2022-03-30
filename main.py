@@ -93,8 +93,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             time.sleep(0.05)
 
     def f13(self):
-        for dlg in self.qwqDlg:
+        for dlg in reversed(self.qwqDlg):
             dlg.close()
+            time.sleep(0.05)
 
     def f14(self):
         self.LBL_3.setCursor(Qt.CursorShape.WaitCursor)
