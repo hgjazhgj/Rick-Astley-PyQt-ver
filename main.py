@@ -60,17 +60,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.BTN_2.setEnabled(False)
 
     def f7(self, x):
-        if x == 0:
-            s = "never"
-        elif x < 25:
-            s = "gonna"
-        elif x < 50:
-            s = "make"
-        elif x < 75:
-            s = "you"
-        else:
-            s = "cry"
-        self.LBL_1.setText(s)
+        self.LBL_1.setText(["never", "gonna", "make", "you", "cry"][x])
 
     def f8(self):
         QFileDialog.getOpenFileName(
