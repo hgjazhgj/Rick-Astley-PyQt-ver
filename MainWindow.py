@@ -418,7 +418,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "You are cheated!"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Get Rick Rolled lol"))
         self.label.setText(_translate("MainWindow", "We are"))
         self.CBB_1.setText(_translate("MainWindow", "Yes"))
         self.label_2.setText(_translate("MainWindow", "strangers"))
